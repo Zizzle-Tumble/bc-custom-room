@@ -77,15 +77,14 @@ reload = function(){
  
  playrhide = function(){
  var RoomLoop;
- for (RoomLoop = 0; RoomLoop < world.room.playerCrumbs.length; RoomLoop++)
+ for (RoomLoop = 0; RoomLoop < world.room.playerCrumbs.length; RoomLoop++){
      if (world.stage.room.players[world.room.playerCrumbs[RoomLoop].i].visible == true && world.stage.room.players[world.room.playerCrumbs[RoomLoop].i].playerId != world.player.playerId && world.room.roomId == newroom.roomId){
 
       world.stage.room.players[world.room.playerCrumbs[RoomLoop].i].visible = false
       world.stage.room.players[world.room.playerCrumbs[RoomLoop].i].nickname.visible = false
      }
-     
-     if (world.room.roomId == newroom.roomId){
-     
-reload()
-   } 
+ }
+ if (world.room.roomId == newroom.roomId){
+     reload()
+ } 
 } 
