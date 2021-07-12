@@ -1,42 +1,5 @@
- newroom = {
-    "roomId": "Personal_Room",
-    "name": "Personal Room",
-    "width": 855,
-    "height": 480,
-    "startX": 0,
-    "startY": 0,
-    "startZ": 0,
-    "startR": 225,
-    "media": {
-        "foreground": "https://i.imgur.com/lROyCIC.png",
-        "background": "https://i.imgur.com/I3lpn7Z.png",
-        "navMesh": "https://boxcritters.com/.attachments/c30c3a2e81c77a55b26645efea1911ec/cf4ead46/navmesh.png",
-        "treasure": "https://boxcritters.com/.attachments/4f099741d8aabae67836e8382fd5ab59/aaa594de/treasure.png"
-        
-        //music coming soon.
-    },
-    "spriteSheet": {
-        "images": [
-            {}
-        ],
-        "framerate": 0,
-        "frames": [
-            [
-                
-            ]
-        ],
-        "animations": {
-        
-        }
-    },
-    "triggers": [],
-    "layout": {
-        "version": 2,
-        "height": 480,
-        "width": 855,
-        "playground": []
-    }
-}
+ newroom = {roomId: "Pizza",  name: "Pizza Place", width: 885, height: 480, startX: 440, startY: 380, startZ: 0, layout: {playground: [[]], height:480, width:885}, media: {background:"https://i.imgur.com/P28O2Fd.png" , foreground:"" , music:"https://www.dropbox.com/s/j30mu8q6f6tvkch/29.%20Charlies%20Here.mp3?dl=0" , navMesh:"https://boxcritters.com/.attachments/4be07fdcf6b1114ffe9139624981afdb/eb7fb8f1/navmesh.png", treasure:"https://boxcritters.com/.attachments/1df74481e9db65f34145f08cbaa7dd5f/2efaa41d/mapserver.png" , }, spritesheet:{}, triggers: [],}
+
 
 
 
@@ -46,8 +9,9 @@
 client.loadedData.rooms.push(newroom)
 world.rooms.push(newroom)
 joinnewroom = function(){
-world.joinRoom("shack")
 
+world.player.x = 440
+world.player.y = 210
 world.handleJoinRoom({roomId:newroom.roomId,playerCrumbs:[client.makeCrumb(world.player)]})
 
 }
