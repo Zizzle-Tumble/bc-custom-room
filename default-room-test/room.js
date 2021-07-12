@@ -1,4 +1,4 @@
-newroom = {roomId: "Pizza",  name: "Pizza Place", width: 855, height: 480, startX: 440, startY: 380, startZ: 0, layout: {playground: [[]], height:480, width:885}, media: {background:"https://i.imgur.com/meyqL7K.png" , foreground:"" , music:"https://www.dl.dropboxusercontent.com/s/j30mu8q6f6tvkch/29.%20Charlies%20Here.mp3?dl=1" , navMesh:"https://boxcritters.com/.attachments/4be07fdcf6b1114ffe9139624981afdb/eb7fb8f1/navmesh.png", treasure:"https://boxcritters.com/.attachments/1df74481e9db65f34145f08cbaa7dd5f/2efaa41d/mapserver.png" , }, spritesheet:{}, triggers: [],}
+newroom = {roomId: "Pizza",  name: "Pizza Place", width: 855, height: 480, startX: 440, startY: 380, startZ: 0, layout: {playground: [[]], height:480, width:885}, media: {background:"https://i.imgur.com/meyqL7K.png" , foreground:"" , music:"https://www.dl.dropboxusercontent.com/s/j30mu8q6f6tvkch/29.%20Charlies%20Here.mp3?dl=1" , navMesh:"https://i.imgur.com/OD7eE16.png", treasure:"https://boxcritters.com/.attachments/1df74481e9db65f34145f08cbaa7dd5f/2efaa41d/mapserver.png" , }, spritesheet:{}, triggers: [],}
 
 
 
