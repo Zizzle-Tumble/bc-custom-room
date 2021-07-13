@@ -42,7 +42,10 @@ if(new.target){
 }
     if (world.rooms[r].roomId == world.rooms[world.rooms.length - 1].roomId){
       world.joinRoom(world.rooms[world.rooms.length - 1].baseroom)
-    }
+    
     setTimeout(world.handleJoinRoom({roomId:world.rooms[r].roomId, playerCrumbs:[client.makeCrumb(world.player)]}),1500)
+    }else{
+      world.joinRoom(world.rooms[r].roomId)
+    }
   }
 }
