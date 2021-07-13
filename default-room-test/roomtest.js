@@ -17,7 +17,8 @@ if(new.target){
   world.player.y = world.rooms[world.rooms.length - 1].startY
   world.joinRoom(world.rooms[world.rooms.length - 1].baseroom)
   
-  setTimeout(world.handleJoinRoom({roomId:world.rooms[world.rooms.length - 1].roomId, playerCrumbs:[client.makeCrumb(world.player)]}),3000)
+  setTimeout(world.handleJoinRoom({roomId:world.rooms[world.rooms.length - 1].roomId, playerCrumbs:[client.makeCrumb(world.player)]}),1500)
+  setTimeout(world.handleJoinRoom({roomId:world.rooms[r].roomId, playerCrumbs:[client.makeCrumb(world.player)]}),1500) // has to be done twice due to how joinroom works
 } else{
 //manage existing room
 }
@@ -43,7 +44,8 @@ if(new.target){
     if (world.rooms[r].roomId == world.rooms[world.rooms.length - 1].roomId){
       world.joinRoom(world.rooms[world.rooms.length - 1].baseroom)
     
-    setTimeout(world.handleJoinRoom({roomId:world.rooms[r].roomId, playerCrumbs:[client.makeCrumb(world.player)]}),3000)
+    setTimeout(world.handleJoinRoom({roomId:world.rooms[r].roomId, playerCrumbs:[client.makeCrumb(world.player)]}),1500)
+    setTimeout(world.handleJoinRoom({roomId:world.rooms[r].roomId, playerCrumbs:[client.makeCrumb(world.player)]}),1500) // has to be done twice due to how joinroom works.
     }else{
       world.joinRoom(world.rooms[r].roomId)
     }
