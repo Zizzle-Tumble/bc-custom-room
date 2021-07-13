@@ -14,7 +14,7 @@ if (whitelisted == undefined || whitelisted == null){
 client.loadedData.rooms.push(newroom)
 world.rooms.push(newroom)
 joinnewroom = function(){
-
+world.joinRoom("shack")
 world.player.x = 440
 world.player.y = 210
 world.handleJoinRoom({roomId:newroom.roomId,playerCrumbs:[client.makeCrumb(world.player)]})
