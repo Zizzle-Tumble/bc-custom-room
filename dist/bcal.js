@@ -95,11 +95,11 @@ BC.Room = (() => {
 	}
 
 	BCAL_Room.prototype.updateRoom = function (property, value) {
-		api.updateRoom(this.id, property, value)
+		BC.api.updateRoom(this.id, property, value)
 	}
 
 	BCAL_Room.prototype.joinRoom = function () {
-		api.JoinRoomByIdNum(this.id)
+		BC.api.JoinRoomByIdNum(this.id)
 	}
 
 	BCAL_Room.prototype.setBackground = function (url) {
