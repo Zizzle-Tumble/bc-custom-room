@@ -1,0 +1,28 @@
+{
+	"name": "bcal",
+	"version": "1.0.0",
+	"description": "Create your own room in boxcritters",
+	"main": "index.js",
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1",
+		"build": "gulp build"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/Zizzle-Tumble/bc-custom-room.git"
+	},
+	"keywords": [],
+	"author": "",
+	"license": "ISC",
+	"bugs": {
+		"url": "https://github.com/Zizzle-Tumble/bc-custom-room/issues"
+	},
+	"homepage": "https://github.com/Zizzle-Tumble/bc-custom-room#readme",
+	"devDependencies": {
+		"gulp": "^4.0.2",
+		"gulp-concat": "^2.6.1",
+		"gulp-plumber": "^1.2.1",
+		"gulp-rename": "^2.0.0",
+		"gulp-terser": "^2.0.1"
+	}
+}
