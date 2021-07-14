@@ -44,11 +44,6 @@ const BC = (() => {
 
 	})();
 
-	function BCAL_Class(container) {
-		if (!new.target) return;
-		this.container = container;
-
-	}
 
 
 
@@ -79,9 +74,8 @@ const BC = (() => {
 		}
 	}
 
-	BCAL_Room.prototype = Object.create(BCAL_Class);
-
 	return {
+		api,
 		Room: BCAL_Room;
 	}
 })();
