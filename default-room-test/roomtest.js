@@ -5,18 +5,22 @@ const BC = (() => {
 
 		function updateRoom(r, i, l) {
 			//update room
-			if (i == "background") {
-				world.rooms[r].media.background = l
-				client.loadedData.rooms[r].media.background = l
+			switch (i) {
+				case "background":
+					world.rooms[r].media.background = l
+					client.loadedData.rooms[r].media.background = l
 
-			} else if (i == "foreground") {
-				world.rooms[r].media.foreground = l
-				client.loadedData.rooms[r].media.foreground = l
+					break;
+				case "foreground":
+					world.rooms[r].media.foreground = l
+					client.loadedData.rooms[r].media.foreground = l
 
-			} else {
-				console.log("Room Media Not Found")
-				// (add navmesh, etc later)
+					break;
 
+				default:
+					console.log("Room Media Not Found")
+					// (add navmesh, etc later)
+					break;
 			}
 			if (world.rooms[r].baseroom != undefined || null) {
 				world.joinRoom(world.rooms[r].baseroom)
@@ -80,6 +84,14 @@ const BC = (() => {
 
 	BCAL_Room.prototype.joinRoom = function () {
 		api.JoinRoomByIdNum(this.id)
+	}
+
+	BCAL_Room.prototype.setBackground = function (url) {
+		this.updateRoom("background", url);
+	}
+
+	BCAL_Room.prototype.setForeground = function (url) {
+		this.updateRoom("foreground", url);
 	}
 
 	return {
